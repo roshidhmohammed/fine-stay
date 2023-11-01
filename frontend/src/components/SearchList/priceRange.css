@@ -1,0 +1,101 @@
+:root {
+    --SLICE-WIDTH: 355px;
+    --THUMB-COLOR: darkcyan;
+    --THUMB-SIZE: 19px;
+  }
+
+.slider{
+    position:relative;
+    width: calc(var(--SLICE-WIDTH) - 5px);
+    margin-left: 2px;
+    /* margin-top: 4px;
+    margin-bottom: 4px; */
+}
+
+.slider__track,
+.slider__range{
+    bottom:-7px;
+    position:absolute;
+}
+
+@supports (-moz-appearance: none) {
+    /* This check if the browser is firefox */
+    .slider__track,
+    .slider__range {
+      bottom: -5px; /* Here you move the slice up or down only on firefox browser */
+    }
+  }
+
+.slider__track,
+.slider__range {
+  border-radius: 3px;
+  height: 9px; /* Here you define the height of the slice */
+}
+
+.slider-track{
+    background-color: hsl(205, 25%, 75%);
+    width: 100%;
+    z-index: 1;
+}
+
+.slider__range{
+    background-color: #65a6d6;
+    z-index: 2;
+}
+ /* removing default apperance */
+
+ .thumb,
+ .thumb::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+
+ }
+
+ .thumb:focus{
+    outline: none;
+ }
+
+ .thumb{
+    pointer-events: none;
+    position: absolute;
+    height: 0px;
+    width: var(--SLICE-WIDTH);
+    /* outline: none; */
+ }
+
+ .thumb--left{
+        z-index: 3;
+ }
+
+ .thumb-right{
+    z-index: 4;
+ }
+
+ /* .thumb--zindex-3{
+    z-index: 3;
+
+ }
+
+ .thumb--zindex-4{
+    z-index: 4;
+ }
+
+ .thumb--xindex-5{
+    z-index: 5;
+ } */
+
+ /* for browsers */
+
+ .thumb::-webkit-slider-thumb{
+    background-color:var(--THUMB-COLOR);
+    border:none;
+    outline: none;
+    border-radius:50%;
+    /* box-shadow: 0 0 1px 1px #ced4da; */
+    cursor: pointer;
+    height: var(--THUMB-SIZE);
+    width: var(--THUMB-SIZE);
+    margin-top: 4px;
+    pointer-events: all;
+    position: relative;
+ }

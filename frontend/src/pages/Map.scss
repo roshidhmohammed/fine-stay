@@ -1,0 +1,285 @@
+.direction {
+    background-color:rgba(0, 0, 0, 0.97);
+    a,
+    a:hover,
+    a:focus,
+    a:active {
+      outline: none;
+      text-decoration: none;
+      color: #337ab7;
+    }
+    .MT30 {
+      margin-top: 30px;
+    }
+    .M10 {
+      margin: 10px;
+    }
+    .MB15 {
+      margin-bottom: 15px;
+    }
+    .MB20 {
+      margin-bottom: 20px;
+    }
+    .MR10 {
+      margin-right: 10px;
+    }
+    .F30 {
+      font-size: 30px;
+    }
+  
+    .F25 {
+      font-size: 25px;
+    }
+    .F18 {
+      font-size: 18px;
+    }
+    .F82 {
+      font-size: 82px;
+      color: black;
+    }
+    .hide {
+      display: none !important;
+    }
+    .duration {
+      font-size: 2em;
+      font-weight: 350;
+    }
+    .constant {
+    }
+    .variable {
+      display: none;
+    }
+    #from_address_show {
+      font-weight: 400;
+    }
+    #to_address_show {
+      font-weight: 400;
+    }
+    #bor_left li {
+      line-height: 1.5;
+      font-size: 16px;
+    }
+    .directions-list {
+      height: auto;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+    }
+    .directions-list.expanded {
+      height: auto;
+      transition: all 0.3s ease-in-out;
+    }
+    .moreDirection {
+      text-align: center;
+    }
+    .moreDirection__btn {
+      border: 1px solid #3e3a39;
+      color: #3e3a39;
+      padding: 10px 16px;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: bold;
+      transition: all 0.3s ease-in-out;
+      border-radius: 5px;
+      &:hover {
+        background: #3e3a39;
+        color: white;
+      }
+    }
+    .primary-title {
+      font-size: 34px;
+      text-transform: uppercase;
+      line-height: 48px;
+      color: white;
+      margin-top: 0;
+      margin-bottom: 20px;
+      border-bottom: 2px solid white;
+      display: inline-block;
+      padding-bottom: 7px;
+    }
+    .map_to,
+    .map_to_box,
+    .map_by,
+    .map_trans {
+      padding-bottom: 5px;
+      padding-top: 5px;
+    }
+    .suggestions {
+      color: white;
+      width: 80%;
+      padding-left: 3%;
+      .suggestion-item {
+        cursor: pointer;
+        &:hover {
+          transform: translate(5px, 0px);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+    #fromAddress {
+      outline: none;
+      border: none;
+      padding: 2px 5px;
+      width: 80%;
+      margin-left: 10px;
+    }
+    .input-focused::placeholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .map_trans {
+      padding-top: 34px;
+      padding-bottom: 5px;
+      position: relative;
+      a {
+        background: url(../Assests/direction_icon.svg) no-repeat 0 0 / cover
+          rgba(0, 0, 0, 0);
+        display: inline-block;
+        height: 52px;
+        width: 87px;
+        background-size: 500px 500px;
+        background-color: white;
+        filter: hue-rotate(90deg);
+      }
+      a,
+      a:hover,
+      a:focus,
+      a:active {
+        outline: none;
+        text-decoration: none;
+        color: #2a6496;
+      }
+  
+      .car,
+      .walk,
+      .cycle,
+      .bus {
+        transition: all 0.3s;
+      }
+  
+      .car {
+        background-position: -25px -175px !important;
+      }
+      .car_active,
+      .car:hover {
+        background-position: -25px -275px !important;
+        cursor: pointer;
+      }
+      .walk {
+        background-position: -150px -175px !important;
+      }
+      .walk_active,
+      .walk:hover {
+        background-position: -150px -275px !important;
+        cursor: pointer;
+      }
+      .cycle {
+        background-position: -270px -175px !important;
+      }
+      .cycle_active,
+      .cycle:hover {
+        background-position: -270px -275px !important;
+        cursor: pointer;
+      }
+    }
+    .book_btn {
+      border-radius: 3px;
+      display: inline-block;
+      margin: 16px 0 0 6px;
+      padding: 0;
+      .btns {
+        border: 0;
+        border-radius: 0;
+        padding: 8px 16px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 0.2s all;
+        font-weight: bold;
+        -webkit-font-smoothing: antialiased;
+        font-size: 19px;
+        display: inline-block;
+      }
+      .btn-grey {
+        background: white;
+        color: grey !important;
+        border-radius: 5px;
+        &:hover {
+          transition: all 0.3 ease-in-out !important;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+            rgba(17, 17, 26, 0.1) 0px 8px 24px,
+            rgba(17, 17, 26, 0.1) 0px 16px 56px;
+          transform: translate(0px, -5px);
+        }
+      }
+    }
+    #custom-marker {
+      width: 80px;
+      height: 80px;
+      background-image: url("../Assests/location.png");
+      transform: translate(-50%, -50%) translate(537px, 316px) rotateX(0deg)
+        rotateZ(0deg);
+      background-repeat: no-repeat;
+      cursor: pointer;
+      border: none;
+    }
+    #map_type {
+      padding: 6px 10px;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      left: 6px;
+      background-color: white;
+      cursor: pointer;
+      position: absolute;
+      top: 40px;
+    }
+    .mapboxgl-popup {
+      padding-bottom: 30px;
+    }
+    .location-details {
+      text-align: start !important;
+      padding-top: 10px !important;
+    }
+    .mapboxgl-popup-close-button {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      position: absolute;
+      right: 3px;
+      top: 2px;
+      font-size: 30px;
+      color: #574f4c;
+    }
+  
+    @media screen and (max-width: 991px) {
+      .primary-title {
+        padding-top: 0;
+      }
+      .suggestions {
+        width: 80%;
+        padding-left: 4.5%;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      .primary-title {
+        font-size: 30px;
+        line-height: 45px;
+      }
+      .suggestions {
+        width: 80%;
+        padding-left: 8%;
+      }
+      .duration {
+        font-size: 30px;
+        font-weight: 400;
+      }
+      // .mobile-shadow {
+      //   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+      //     rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      // }
+      .moreDirection {
+        margin-bottom: 1rem;
+      }
+    }
+  }

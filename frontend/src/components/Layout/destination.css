@@ -1,0 +1,28 @@
+.destination-custom {
+  border-width: 0px;
+  border-radius: 0px;
+  border-color: transparent;
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+  gap: 0rem;
+  max-height: 22rem;
+  min-height: 22rem;
+  padding-top: 0.5rem /* 8px */;
+  padding-bottom: 0.5rem /* 8px */;
+  display: flex;
+  overflow-y: hidden;
+  scroll-snap-type: x var(--tw-scroll-snap-strictness);
+  margin-left: 2.1rem;
+  margin-right: 2.1rem;
+
+  @media (min-width: 768px) {
+    margin-left: 6.2rem /* 208px */;
+    margin-right: 6.2rem;
+    max-height: 28rem;
+    min-height: 28rem;
+  }
+}
+
+.destination-custom::-webkit-scrollbar {
+  display: none;
+}

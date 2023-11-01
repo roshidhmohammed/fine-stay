@@ -1,0 +1,35 @@
+.Review-Details{
+    border-width: 0px;
+    border-radius: 0px;
+    border-color: transparent;
+    --tw-border-opacity: 1;
+    border-color: rgb(156 163 175 / var(--tw-border-opacity));
+    gap: rem;
+    max-height: rem;
+    min-height: rem;
+    min-width: rem;
+    max-width: rem;
+    /* height: auto; */
+    padding-top: 0.5rem /* 8px */;
+    padding-bottom: 0.5rem /* 8px */;
+    display: flex;
+    overflow-y: hidden;
+    scroll-snap-type: x var(--tw-scroll-snap-strictness);
+    margin-left: 0;
+    margin-right: 0;
+  
+    @media (min-width: 768px) {
+      margin-left: rem /* 208px */;
+      margin-right: rem;
+      max-height: rem;
+      min-height: rem;
+      gap:2rem;
+      min-width:rem;
+    max-width: rem;
+     
+    }
+}
+
+.Review-Details::-webkit-scrollbar {
+    display: none;
+  }
