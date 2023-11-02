@@ -39,7 +39,7 @@ router.post("/create-partner", async (req, res, next) => {
 
     const activationToken = createActivationToken(partner);
 
-    const activationUrl = `http://localhost:3000/partner/activation/${activationToken}`;
+    const activationUrl = `https://fine-stay-66q4.vercel.app/partner/activation/${activationToken}`;
 
     try {
       await sendMail({

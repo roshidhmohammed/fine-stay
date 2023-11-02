@@ -15,7 +15,7 @@ app.use(
     credentials: true,
   })
 );
-app.use("/", (req, res)=>{
+app.use("/test", (req, res)=>{
   res.send("Hello World");
 });
 app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
