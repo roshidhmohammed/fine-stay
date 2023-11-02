@@ -11,7 +11,7 @@ app.use(cookieParser());
 app.use(
   cors({
     // frontend
-    origin: "http://localhost:3000",
+    origin: "https://fine-stay-66q4.vercel.app",
     credentials: true,
   })
 );
