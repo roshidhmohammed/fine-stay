@@ -2,6 +2,9 @@
   "name": "final-project-mern",
   "version": "1.0.0",
   "main": "server.js",
+  "engines":{
+    "node": "18.x"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js",
