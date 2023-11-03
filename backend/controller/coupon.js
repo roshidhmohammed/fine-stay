@@ -40,7 +40,7 @@ router.post(
 // get all coupons admin
 router.get(
   "/get-all-coupons",
-  isAdmin,
+  // isAdmin,
   isAuthenticated,
   catchAsyncErrors(async (req, res, next) => {
     try {
