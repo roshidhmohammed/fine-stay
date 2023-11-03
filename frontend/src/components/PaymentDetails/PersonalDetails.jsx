@@ -228,7 +228,7 @@ const PersonalDetails = () => {
           : "no coupon applied",
         checkinDate: search.startDate,
         checkoutdate: search.endDate,
-        mobileNumber: user.mobileNumber,
+        // mobileNumber: user.mobileNumber,
         paymentId: paymentInfo.payer_id,
         paymentMode: "paypal",
         paymentType: "paypal",
