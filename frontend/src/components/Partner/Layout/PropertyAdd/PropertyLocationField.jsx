@@ -65,7 +65,7 @@ const PropertyLocationField = ({ currentLocation, setCurrentLocation }) => {
           zoom: 5,
         }}
         style={{ position: "relative", width: 600, height: 400 }}
-        mapStyle="mapbox://styles/mapbox/streets-12"
+        mapStyle="mapbox://styles/mapbox/streets-v9"
       >
         <Marker
           longitude={currentLocation.longitude}
