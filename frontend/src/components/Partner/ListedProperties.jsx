@@ -20,7 +20,7 @@ const ListedProperties = ({ setPropertyShow, setPropId }) => {
 
   const handleCouponDelete = (id) => {
     dispatch(getDeleteProperty(id));
-    window.location.reload();
+    // window.location.reload();
   };
   const columns = [
     { field: "id", headerName: "Property Id", minWidth: 150, flex: 0.7 },

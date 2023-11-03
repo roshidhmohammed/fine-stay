@@ -26,7 +26,7 @@ const CouponManagement = () => {
   const handleCouponDelete = (id) => {
     dispatch(deleteCoupons(id));
     toast.success(message);
-    window.location.reload();
+    // window.location.reload();
   };
 
   const handleAddCoupon = async (e) => {
