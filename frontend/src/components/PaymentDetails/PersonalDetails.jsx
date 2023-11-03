@@ -45,7 +45,7 @@ const PersonalDetails = () => {
     usedBy: [],
     user: user.name,
   });
-  const [mobileNo, setMobNo] = useState(user.mobileNumber);
+  const [mobileNo, setMobNo] = useState(user?.mobileNumber);
   const [stripeApiKey, setStripeApiKey] = useState("");
   const [open, setOpen] = useState(false);
   const [select, setSelect] = useState("0");
@@ -260,7 +260,7 @@ const PersonalDetails = () => {
           : "no coupon applied",
         checkinDate: search.startDate,
         checkoutdate: search.endDate,
-        mobileNumber: user.mobileNumber,
+        // mobileNumber: user.mobileNumber,
         paymentId: "no",
         paymentMode: "Cash Payment",
         paymentType: "pay at hotel",
@@ -383,7 +383,7 @@ const PersonalDetails = () => {
                         onChange={(e) => setMobNo(e.target.value)}
                         className="border-2 w-60 h-9 bg-[#7b9f87]  border-solid pl-2"
                         placeholder="eg:1234567890"
-                        required
+                        
                       />
                     </div>
                   </div>
@@ -819,13 +819,13 @@ const PersonalDetails = () => {
                         onChange={(e) => setMobNo(e.target.value)}
                         className="border-2 w-full h-9 bg-[#7b9f87]  border-solid pl-1"
                         placeholder="eg:1234567890"
-                        required
+                        
                       />
                     </div>
                   </div>
 
                   <div className=" mr-2 ml-2">
-                    {mobileNo !== user.mobileNumber ? (
+                    {mobileNo !== user?.mobileNumber ? (
                       <button className="w-full  h-10 mt-6 font-Roboto font-bold text-lg tracking-wide  border-solid rounded-md pt-1 pb-1 shadow-md text-gray-100 bg-[#00302D] hover:bg-[#00302d66]">
                         Update Mobile Number
                       </button>
@@ -995,7 +995,7 @@ const CheckoutForm = ({
               : "no coupon applied",
             checkinDate: search.startDate,
             checkoutdate: search.endDate,
-            mobileNumber: user.mobileNumber,
+            // mobileNumber: user.mobileNumber,
             paymentId: result.paymentIntent.id,
             paymentMode: "stripe",
             paymentType: result.paymentIntent.payment_method_types[0],
