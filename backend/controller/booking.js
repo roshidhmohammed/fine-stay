@@ -95,8 +95,6 @@ router.post(
 
 router.get(
   "/get-all-bookings",
-  isPartner,
-  isAdmin,
   catchAsyncErrors(async (req, res, next) => {
     try {
       const allBookings = await Booking.find();
