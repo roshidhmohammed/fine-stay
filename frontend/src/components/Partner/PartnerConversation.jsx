@@ -9,7 +9,7 @@ import TimeAgo from "react-timeago";
 import axios from "axios";
 import { server } from "../../server";
 import socketIO from "socket.io-client";
-const ENDPOINT = "http://localhost:4000/";
+const ENDPOINT = "https://socket-fine-stays.onrender.com/";
 const socketId = socketIO(ENDPOINT, { transports: ["websocket"] });
 
 const PartnerConversation = () => {
