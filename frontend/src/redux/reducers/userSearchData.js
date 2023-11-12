@@ -1,7 +1,7 @@
 import { createReducer } from "@reduxjs/toolkit";
 
 const persistedState = localStorage.getItem("searchResults")
-  ? JSON.parse(localStorage.getItem("searchResults"))
+  ? JSON.parse.toString(localStorage.getItem("searchResults"))
   : {};
 
 const initialState = {
