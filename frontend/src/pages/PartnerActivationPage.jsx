@@ -11,7 +11,7 @@ const PartnerActivationPage = () => {
     if (activation_token) {
       const sendRequest = async () => {
         await axios
-          .post(`${server}/partner/activation`, {
+          .post(`${server}/partner/activation/${activation_token}`, {
             activation_token,
           })
           .then((res) => {
