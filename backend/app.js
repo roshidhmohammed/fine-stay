@@ -11,7 +11,7 @@ app.use(cookieParser());
 app.use(
   cors({
     // frontend
-    origin: "https://fine-stay-66q4.vercel.app",
+    origin: "https://fine-stay.vercel.app",
     credentials: true,
   })
 );
