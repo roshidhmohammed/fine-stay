@@ -9,6 +9,16 @@ const { isAuthenticated, isPartner, isAdmin } = require("../middleware/auth");
 const ErrorHandler = require("../utils/errorHandler");
 const catchAsyncError = require("../middleware/catchAsyncError");
 
+
+
+// create activation token
+
+const createActivationToken = (partner) => {
+  return jwt.sign(partner, process.env.ACTIVATION_SECRET, {
+    expiresIn: "5m",
+  });
+};
+
 // create partner
 
 router.post("/create-partner", async (req, res, next) => {
@@ -62,13 +72,7 @@ router.post("/create-partner", async (req, res, next) => {
   }
 });
 
-// create activation token
 
-const createActivationToken = (partner) => {
-  return jwt.sign(partner, process.env.ACTIVATION_SECRET, {
-    expiresIn: "5m",
-  });
-};
 
 // activate partner
 router.post(
