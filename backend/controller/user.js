@@ -37,7 +37,7 @@ router.post("/create-user", async (req, res, next) => {
 
     const activationToken = createActivationToken(user);
 
-    const activationUrl = `https://fine-stay-66q4.vercel.app/activation/${activationToken}`;
+    const activationUrl = `https://fine-stay.vercel.app//activation/${activationToken}`;
 
     try {
       await sendMail({
