@@ -9,7 +9,7 @@ const PartnerActivationPage = () => {
 
   useEffect(() => {
     if (activation_token) {
-      const sendRequest = async() => {
+      const sendRequest = async () => {
         await axios
           .post(`${server}/partner/activation`, {
             activation_token,
@@ -23,7 +23,7 @@ const PartnerActivationPage = () => {
       };
       sendRequest();
     }
-  }, [activation_token]);
+  }, []);
 
   return (
     <div
